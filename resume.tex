@@ -1,0 +1,245 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{5pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Abhishek Suryavanshi} \\ \vspace{12pt}
+     \href{mailto:abhishek170@protonmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{ab524189@gmail.com}} ~ 
+    \href{https://linkedin.com/in/abhisheksuryavanshi/}{\raisebox{-0.2\height}\faLinkedin\ \underline{abhisheksuryavanshi}}  ~
+    \href{https://github.com/abhisheksuryavanshi}{\raisebox{-0.2\height}\faGithub\ \underline{abhisheksuryavanshi}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology, Guwahati}{Aug. 2016 -- Sept. 2020}
+      {Bachelor of Technology in Computer Science and Engineering}{Guwahati, Assam}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Nutanix}{October 2021 -- Present}
+      {Member of Technical Staff 2}{Bangalore}
+      \resumeItemListStart
+                \resumeItem{Played a key role in the Nutanix Objects Federation project, enabling a unified global namespace across geo-distributed object stores.}
+                \resumeItem{Led the effort to migrate the codebase to RHEL8, ensuring compatibility and optimizing performance.}
+                \resumeItem{Designed and implemented tools for seamless interaction with Federation of Object stores, allowing functionalities like bucket and object creation, querying configurations, and cluster management.}
+                \resumeItem{Developed a robust feature for intelligent forwarding of requests to the appropriate Objects Cluster, ensuring efficient request processing even during member downtimes and limiting forwarding count for optimal performance.}
+                \resumeItem{Successfully integrated Samba, an open-source SMB adapter, on top of the NFS adapter, providing customers with SMB access to Nutanix Objects.}
+                \resumeItem{Significantly contributed to the Heimdall project during a Hackathon, focusing on utilizing CMake's dependency graph to determine the necessary unit tests for proposed code changes, increasing code quality and reducing development time.}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Microsoft}{July 2020 -- September 2021}
+      {Software Engineer}{Bangalore}
+      \resumeItemListStart
+        \resumeItem{Power stack owner for the next gen Surface ProX device.}
+        \resumeItem{Worked closely with different teams in Qualcomm and Microsoft to improve the power consumption of different subsystems including Display, Soc, Touch and Wifi resulting in a 2 hour increase in active usage time of the device. }
+        \resumeItem{Added functionalities to the Core Thermal Management driver to enable features like  changes to processor power based on slider and camera states and hysteresis based fan speed control, used across Surface products.}
+        \resumeItem{Implemented a system for bypassing thread separation in the System Manageability Framework Core driver to reduce the service time for critical inter driver communication.}
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+        % \resumeProjectHeading
+        %   {\textbf{YeetIt} $|$ \emph{https://git.io/JZe94}}{}
+        %   \resumeItemListStart
+        %     \resumeItem{Created a Rendering engine with Ray tracing capabilities from scratch in C++.}
+        %     \resumeItem{Followed Object oriented methods to implement features like Anti-Aliasing, Defocus Blur, Reflection, Refraction and Attenuation. Used multi threading to reduce rendering time by 4-6X.}
+        %   \resumeItemListEnd
+        %   \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{RayTracer} $|$ \emph{git.io/JZe94}}{}
+          \resumeItemListStart
+            \resumeItem{Created a Rendering engine with Ray tracing capabilities from scratch in C++.}
+            \resumeItem{Followed Object oriented methods to implement features like Anti-Aliasing, Defocus Blur, Reflection, Refraction and Attenuation. Used multi threading to reduce rendering time by 4-6X.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Lexycon - Local text search engine} $|$ \emph{goo.gl/FDLcoi}}{}
+          \resumeItemListStart
+            \resumeItem{Created a Python based Console Application to search documents in a folder for a Query string.}
+            \resumeItem{Used Term Frequency-Inverse Document Frequency (Tf-Idf) algorithm to rank the search results in decreasing
+order of their Cosine Similarity with Stemmed Query string.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          % \resumeProjectHeading
+          % {\textbf{Smart Faculty portal} $|$ \emph{goo.gl/dLNNCG}}{}
+          % \resumeItemListStart
+          %   \resumeItem{
+          %   Created a web portal for faculty to manage their personal homepage.}
+          %   \resumeItem{Implemented feature to scrape data from their existing homepage on the intranet and load it to a standardised template on signup. Added Email verification and Captcha for security.}
+          %   \resumeItem{Used Django to for backend and HTML/CSS/Javascript for frontend.}
+          % \resumeItemListEnd
+          % \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{C-compiler} $|$ \emph{git.io/fjpjR}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a Compiler for C like language which supports arithmetic, logical and relational operations; various
+data types; conditional statements; looping and nesting.}
+            \resumeItem{Used Flex for tokenizing the input program and Bison for syntax and semantic checking.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, C, Python, Java*, Golang*} \\
+     \textbf{Database management}{: SQL, MongoDB} \\
+     \textbf{Misc}{: Kubernetes, Docker, Zookeeper, GDB, Shell} \\
+    }}
+ \end{itemize}
+ * implies elementry proficiency
+ \vspace{-16pt}
+
+
+%-----------INVOLVEMENT---------------
+% \section{Leadership / Extracurricular}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
+%             \resumeItemListStart
+%                 \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
+%                 \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
+%                 \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+%             \resumeItemListEnd
+        
+%     \resumeSubHeadingListEnd
+
+
+\end{document}
